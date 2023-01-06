@@ -1,0 +1,38 @@
+{
+    "name": "laravel-restype/laravel-restype",
+    "type": "library",
+    "license": "MIT",
+    "homepage": "https://github.com/laravel-restype/laravel-restype",
+    "autoload": {
+        "psr-4": {
+            "LaravelRESType\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Andrei Telteu",
+            "email": "andrei@telteu.ro"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "illuminate/support": "^9.0",
+        "illuminate/contracts": "^9.0",
+        "spatie/laravel-typescript-transformer": "^2.1"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LaravelRESType\\LaravelRESTypeServiceProvider"
+            ]
+        }
+    },
+    "keywords": [
+        "laravel",
+        "typescript",
+        "type-safety",
+        "tRPC",
+        "RPC",
+        "REST-api"
+    ]
+}
