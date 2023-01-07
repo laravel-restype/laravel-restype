@@ -15,7 +15,7 @@ composer require laravel-restype/laravel-restype:"*"
 Publish config
 
 ```bash
-php artisan vendor:publish --provider="LaravelRESType\LaravelRESTypeServiceProvider"
+php artisan vendor:publish --tag="laravel-restype-config"
 ```
 
 # Example project
