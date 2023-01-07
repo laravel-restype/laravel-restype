@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Transformers;
+namespace LaravelRESType\Transformers;
 
 use ReflectionClass;
 use Spatie\TypeScriptTransformer\Structures\TransformedType;

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Attributes;
+namespace LaravelRESType\Attributes;
 
 use Attribute;
 use phpDocumentor\Reflection\Type;

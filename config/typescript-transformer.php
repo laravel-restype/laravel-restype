@@ -22,7 +22,7 @@ return [
      */
 
     'transformers' => [
-        App\Transformers\RoutesTransformer::class,
+        LaravelRESType\Transformers\RoutesTransformer::class,
         Spatie\LaravelTypeScriptTransformer\Transformers\SpatieStateTransformer::class,
         Spatie\TypeScriptTransformer\Transformers\SpatieEnumTransformer::class,
         Spatie\TypeScriptTransformer\Transformers\DtoTransformer::class,
