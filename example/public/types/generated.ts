@@ -1,7 +1,7 @@
 declare namespace App.Http.Controllers.Api {
     export type UserController = {
         get: {
-            responses: { 0: App.Models.User };
+            responses: { 0: { logged: false; user: null }; 1: { logged: true; user: App.Models.User } };
             params?: null | undefined;
             query?: null | undefined;
             body?: null | undefined;

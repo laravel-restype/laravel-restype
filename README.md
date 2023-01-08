@@ -18,6 +18,12 @@ Publish config
 php artisan vendor:publish --tag="laravel-restype-config"
 ```
 
+Generate your new typescript definition with:
+
+```bash
+php artisan typescript:transform
+```
+
 # Example project
 
 ```bash
