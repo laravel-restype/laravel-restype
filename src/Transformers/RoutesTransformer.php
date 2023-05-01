@@ -45,7 +45,7 @@ class RoutesTransformer implements Transformer
             $method = optional($route->methods())[0] ?: 'GET';
             $url = str_replace('api/', '', $route->uri());
             if (strpos($controller, 'App\Http\Controllers\Api') !== false) {
-                $name = Str::camel(str_replace('/', '-', $url));
+                $name = Str::camel(str_replace(['/', '{', '?'], '-', str_replace('}', '', $url)));
                 $controllerDef = explode('@', str_replace('\\', '.', $controller));
                 $controllerDef = "{$controllerDef[0]}['$controllerDef[1]']";
                 $result .= "\n    $name: ({ method: '$method', url: '/$url' } as {$className}Type<

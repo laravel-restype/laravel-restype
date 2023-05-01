@@ -83,6 +83,8 @@ Note: a current limitation is that we can't generate typescript definitions for 
 php artisan typescript:transform
 ```
 
+The default destination is: `/public/types/generated.ts`
+
 4. Install our client typescript package in your frontend project to use your new definitions.
 
 Follow the steps from the [client package documentation](https://github.com/laravel-restype/laravel-restype-client#readme).
@@ -105,6 +107,10 @@ docker-compose exec php su app -c 'cd example; cp .env.example .env; php artisan
 | &#x2610; | Support file type, convert json body to FormData |
 
 # Changelog:
+
+### v0.1.1 - 2023-05-01
+
+-   Patch - fixed method name generation for routes with params
 
 ### v0.1 - 2023-01-07
 
